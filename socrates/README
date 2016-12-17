@@ -1,0 +1,18 @@
+This is an implementation of the mother of all syllogisms:
+
+```
+socrates is a man,            -- man(socrates)
+all men are mortal,           -- mortal(X) :- man(X)
+therefore socrates is mortal  -- mortal(socrates) -> yes
+```
+
+This is the real prolog equivalent of a hello world program.
+
+To run this
+
+```
+$ gprolog
+?- [socrates].
+?- mortal(socrates)
+yes
+```
