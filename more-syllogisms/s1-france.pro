@@ -11,3 +11,5 @@ place(france,europe).
 % e.g. isin(sally,europe).
 isin(X,Z) :- place(X,Z).
 isin(X,Z) :- place(X,Y) , isin(Y,Z).
+
+% the answer to the syllogism is, isin(you,france), which returns 'no'.
